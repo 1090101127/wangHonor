@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    创建分支前需要创建一个公共的主页 如 index.html 文件
+    然后执行:1.  $ git add .
+            2.  $ git commit -m '默认主分支第一次提交index.html'
+    再创建分支 3.  $ git branch pipei
+    查看分支   4. $ git branch
+    切换分支   5. $ git checkout pipei
+    再查看分支 6.$ git branch  可在文件下增加 pipei.html ,此时增加的文件是属于分支匹配下的文件
+              7. 重新提交 $ git add .
+              8.$ git commit -m '匹配分支的第一次提交1.0提交pipei.html'
+    查看日志    9. $ git log
+              10.$ git branch
+              11. $ git checkout master
+
+12.git push -u origin master 把本地代码提交到远程仓库主分支 后面这句
+  注意体现分支的不要前面的-u: 输入:  git push origin master 
+  再输入:git checkout pipei 
+  在输入:git push origin pipei
+
+</body>
+</html>
